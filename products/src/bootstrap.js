@@ -16,7 +16,7 @@ const mount = (el) => {
 // We are using our local index.html file
 // Which DEFNITELY has an element with an id of 'dev-products
 // We want to immediately render our app into that element
-if (process?.NODE_ENV === 'development') {
+if (process.env.NODE_ENV === 'development') {
   const el = document.querySelector('#dev-products')
 
   // Assuming our container doesnt have an element
